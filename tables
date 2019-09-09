@@ -1,0 +1,8 @@
+articles
+author, title, slug, lead, body, time, id
+
+authors
+name, bio, id
+
+log
+path, ip, method, status, time id
