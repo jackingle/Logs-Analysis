@@ -81,7 +81,8 @@ query2 = """SELECT authors.name, count(*) as views FROM articles inner
             GROUP BY authors.name
             ORDER BY views DESC;"""
 
-query3 = """SELECT * FROM (SELECT date(time),round(100.0*sum(CASE log.status
+query3 = """SELECT * FROM (SELECT TO_CHAR(time :: DATE, 'Mon dd, yyyy'),
+            round(100.0*sum(CASE log.status
             WHEN '404 NOT FOUND'  THEN 1 ELSE 0 END)/count(log.status),3)
             AS error FROM log
             GROUP BY date(time)
