@@ -14,11 +14,11 @@ This project required a virtual machine with a premade database but not  all of
 the listed dependencies may be required.  For safety's sake, I have included
 all of the dependencies I had.
 
--Python 2 or 3(any version)
--PostgreSQL 9.6
--Vagrant
--VirtualBox
--newsdata.sql database
+- Python 2 or 3(any version)
+- PostgreSQL 9.6
+- Vagrant
+- VirtualBox
+- newsdata.sql database
 
 newsdata.sql database can be found within newsdata.zip [at this link](https://d17h27t6h515a5.cloudfront.net/topher/2016/August/57b5f748_newsdata/newsdata.zip).
 The necessary virtual machine can be found [at this link](https://github.com/udacity/fullstack-nanodegree-vm/blob/master/vagrant/Vagrantfile).
